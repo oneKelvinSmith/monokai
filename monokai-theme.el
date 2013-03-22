@@ -119,11 +119,11 @@
    `(menu ((t (:foreground ,monokai-fg :background ,monokai-bg))))
    `(minibuffer-prompt ((t (:foreground ,monokai-red))))
    `(mode-line
-     ((,class (:foreground ,monokai-blue
+     ((,class (:foreground ,monokai-green
                            :background ,monokai-bg+1
                            :box (:line-width -1 :style released-button)))
       (t :inverse-video t)))
-   `(mode-line-buffer-id ((t (:foreground ,monokai-orange :weight bold))))
+   `(mode-line-buffer-id ((t (:foreground ,monokai-red :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,monokai-bg+1
                       :background ,monokai-bg
@@ -139,8 +139,8 @@
    `(font-lock-comment-delimiter-face ((t (:foreground ,monokai-fg-1))))
    `(font-lock-comment-face ((t (:foreground ,monokai-fg-1))))
    `(font-lock-constant-face ((t (:foreground ,monokai-red))))
-   `(font-lock-doc-face ((t (:foreground ,monokai-fg-1))))
-   `(font-lock-doc-string-face ((t (:foreground ,monokai-fg-1))))
+   `(font-lock-doc-face ((t (:foreground ,monokai-purple))))
+   `(font-lock-doc-string-face ((t (:foreground ,monokai-orange))))
    `(font-lock-function-name-face ((t (:foreground ,monokai-green))))
    `(font-lock-keyword-face ((t (:foreground ,monokai-red :weight bold))))
    `(font-lock-negation-char-face ((t (:foreground ,monokai-fg-1))))
