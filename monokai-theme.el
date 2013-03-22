@@ -41,15 +41,15 @@
       (monokai-bg "#272822")
       (monokai-bg+1 "#49483E")
       (monokai-red-1 "#A20C41")
-      (monokai-red "#F92672") ;; orchid
+      (monokai-red "#F92672")
       (monokai-red+1 "#FC5C94")
       (monokai-red+2 "#FC87B0")
       (monokai-green-1 "#67930F")
-      (monokai-green "#A6E22E") ;; hen1nk
+      (monokai-green "#A6E22E")
       (monokai-green+1 "#C1F161")
-      (monokai-green+2 "#CDF187")
+      (monokai-green+2"#CDF187")
       (monokai-orange-1 "#A45E0A")
-      (monokai-orange "#FD971F") ;; pumpkin spice
+      (monokai-orange "#FD971F")
       (monokai-orange+1 "#FEB257")
       (monokai-orange+2 "#FEC683")
       (monokai-yellow-1 "#968B26")
@@ -85,7 +85,7 @@
    `(default ((t (:foreground ,monokai-fg :background ,monokai-bg))))
    `(cursor ((t (:foreground ,monokai-red :background ,monokai-fg+1))))
    `(escape-glyph ((t (:foreground ,monokai-fg-1 :bold t))))
-   `(fringe ((t (:foreground ,monokai-fg :background ,monokai-bg-1))))
+   `(fringe ((t (:foreground ,monokai-fg :background ,monokai-bg))))
    `(header-line ((t (:foreground ,monokai-fg-1
                                   :background ,monokai-bg-1
                                   :box (:line-width -1 :style released-button)))))
@@ -119,13 +119,13 @@
    `(menu ((t (:foreground ,monokai-fg :background ,monokai-bg))))
    `(minibuffer-prompt ((t (:foreground ,monokai-red))))
    `(mode-line
-     ((,class (:foreground ,monokai-green
-                           :background ,monokai-bg-1
+     ((,class (:foreground ,monokai-blue
+                           :background ,monokai-bg+1
                            :box (:line-width -1 :style released-button)))
       (t :inverse-video t)))
-   `(mode-line-buffer-id ((t (:foreground ,monokai-red :weight bold))))
+   `(mode-line-buffer-id ((t (:foreground ,monokai-orange :weight bold))))
    `(mode-line-inactive
-     ((t (:foreground ,monokai-green-1
+     ((t (:foreground ,monokai-bg+1
                       :background ,monokai-bg
                       :box (:line-width -1 :style released-button)))))
    `(region ((,class (:background ,monokai-bg-1))
@@ -138,9 +138,9 @@
    `(font-lock-builtin-face ((t (:foreground ,monokai-blue))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,monokai-fg-1))))
    `(font-lock-comment-face ((t (:foreground ,monokai-fg-1))))
-   `(font-lock-constant-face ((t (:foreground ,monokai-purple))))
-   `(font-lock-doc-face ((t (:foreground ,monokai-red))))
-   `(font-lock-doc-string-face ((t (:foreground ,monokai-orange))))
+   `(font-lock-constant-face ((t (:foreground ,monokai-red))))
+   `(font-lock-doc-face ((t (:foreground ,monokai-fg-1))))
+   `(font-lock-doc-string-face ((t (:foreground ,monokai-fg-1))))
    `(font-lock-function-name-face ((t (:foreground ,monokai-green))))
    `(font-lock-keyword-face ((t (:foreground ,monokai-red :weight bold))))
    `(font-lock-negation-char-face ((t (:foreground ,monokai-fg-1))))
@@ -510,16 +510,16 @@
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,monokai-fg))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,monokai-blue))))
-   `(rainbow-delimiters-depth-3-face ((t (:foreground ,monokai-orange))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground ,monokai-red))))
    `(rainbow-delimiters-depth-4-face ((t (:foreground ,monokai-green))))
    `(rainbow-delimiters-depth-5-face ((t (:foreground ,monokai-purple))))
-   `(rainbow-delimiters-depth-6-face ((t (:foreground ,monokai-red))))
-   `(rainbow-delimiters-depth-7-face ((t (:foreground ,monokai-red))))
+   `(rainbow-delimiters-depth-6-face ((t (:foreground ,monokai-cyan))))
+   `(rainbow-delimiters-depth-7-face ((t (:foreground ,monokai-orange))))
    `(rainbow-delimiters-depth-8-face ((t (:foreground ,monokai-blue+1))))
-   `(rainbow-delimiters-depth-9-face ((t (:foreground ,monokai-orange+1))))
+   `(rainbow-delimiters-depth-9-face ((t (:foreground ,monokai-red+1))))
    `(rainbow-delimiters-depth-10-face ((t (:foreground ,monokai-green+1))))
    `(rainbow-delimiters-depth-11-face ((t (:foreground ,monokai-purple+1))))
-   `(rainbow-delimiters-depth-12-face ((t (:foreground ,monokai-red+1))))
+   `(rainbow-delimiters-depth-12-face ((t (:foreground ,monokai-orange+1))))
 
    ;;rcirc
    `(rcirc-my-nick ((t (:foreground ,monokai-blue))))
