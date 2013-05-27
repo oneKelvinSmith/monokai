@@ -119,11 +119,11 @@
    `(menu ((t (:foreground ,monokai-fg :background ,monokai-bg))))
    `(minibuffer-prompt ((t (:foreground ,monokai-red))))
    `(mode-line
-     ((,class (:foreground ,monokai-green
+     ((,class (:foreground ,monokai-fg
                            :background ,monokai-bg+1
                            :box (:line-width -1 :style released-button)))
       (t :inverse-video t)))
-   `(mode-line-buffer-id ((t (:foreground ,monokai-red :weight bold))))
+   `(mode-line-buffer-id ((t (:foreground ,monokai-green :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,monokai-bg+1
                       :background ,monokai-bg
