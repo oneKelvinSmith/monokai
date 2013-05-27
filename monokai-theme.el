@@ -83,7 +83,7 @@
 
    ;;; basic coloring
    `(default ((t (:foreground ,monokai-fg :background ,monokai-bg))))
-   `(cursor ((t (:foreground ,monokai-red :background ,monokai-fg+1))))
+   `(cursor ((t (:foreground ,monokai-red :background ,monokai-bg+1))))
    `(escape-glyph ((t (:foreground ,monokai-fg-1 :bold t))))
    `(fringe ((t (:foreground ,monokai-fg :background ,monokai-bg))))
    `(header-line ((t (:foreground ,monokai-fg-1
@@ -132,13 +132,13 @@
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,monokai-bg))))
    `(trailing-whitespace ((t (:background ,monokai-red))))
-   `(vertical-border ((t (:foreground ,monokai-red))))
+   `(vertical-border ((t (:foreground ,monokai-bg+1))))
 
    ;;; font lock
-   `(font-lock-builtin-face ((t (:foreground ,monokai-blue))))
+   `(font-lock-builtin-face ((t (:foreground ,monokai-green))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,monokai-fg-1))))
    `(font-lock-comment-face ((t (:foreground ,monokai-fg-1))))
-   `(font-lock-constant-face ((t (:foreground ,monokai-red))))
+   `(font-lock-constant-face ((t (:foreground ,monokai-purple))))
    `(font-lock-doc-face ((t (:foreground ,monokai-purple))))
    `(font-lock-doc-string-face ((t (:foreground ,monokai-orange))))
    `(font-lock-function-name-face ((t (:foreground ,monokai-green))))
@@ -536,6 +536,16 @@
    `(rcirc-track-keyword ((t (:bold t))))
    `(rcirc-url ((t (:bold t))))
    `(rcirc-keyword ((t (:foreground ,monokai-red :bold t))))
+
+   ;; rhtml-mode
+   `(erb-face ((t (:foreground ,monokai-fg+1 :background ,monokai-bg-1))))
+   `(erb-delim-face ((t (:foreground ,monokai-red :background ,monokai-bg-1))))
+   `(erb-exec-face ((t (:foreground ,monokai-fg+1 :background ,monokai-bg-1))))
+   `(erb-exec-delim-face ((t (:foreground ,monokai-red :background ,monokai-bg-1))))
+   `(erb-out-face ((t (:foreground ,monokai-fg+1 :background ,monokai-bg-1))))
+   `(erb-out-delim-face ((t (:foreground ,monokai-red-1 :background ,monokai-bg-1))))
+   `(erb-comment-face ((t (:foreground ,monokai-fg-1 :background ,monokai-bg-1))))
+   `(erb-comment-delim-face ((t (:foreground ,monokai-fg-1 :background ,monokai-bg-1))))
 
    ;; rpm-mode
    `(rpm-spec-dir-face ((t (:foreground ,monokai-green))))
