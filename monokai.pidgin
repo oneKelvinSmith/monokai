@@ -1,0 +1,17 @@
+cat > $HOME/.purple/gtkrc-2.0 << "EOF"
+# Create a style called "monokai" where the text and base (the base color behind the widget) are the reverse of typical.
+style "monokai"
+{
+text[NORMAL] = "#F8F8F2"
+base[NORMAL] = "#272822"
+}
+
+# Apply "monokai" to conversation entry box--where you type.
+widget "*pidgin_conv_entry" style "monokai"
+
+# Apply "monokai" to conversation history pane--where you read the conversation.
+widget "*pidgin_conv_imhtml" style "monokai"
+
+widget "*pidgin_blist_treeview" style "monokai"
+EOF
+exit

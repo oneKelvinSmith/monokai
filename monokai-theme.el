@@ -85,7 +85,7 @@
 
    ;;; basic coloring
    `(default ((t (:foreground ,monokai-fg :background ,monokai-bg))))
-   `(cursor ((t (:foreground ,monokai-fg+1 :background ,monokai-orange))))
+   `(cursor ((t (:foreground ,monokai-bg :background ,monokai-fg+1))))
    `(escape-glyph ((t (:foreground ,monokai-fg-1 :bold t))))
    `(fringe ((t (:foreground ,monokai-fg :background ,monokai-bg))))
    `(header-line ((t (:foreground ,monokai-fg-1
@@ -109,14 +109,14 @@
    ;;; grep
    `(grep-context-face ((t (:foreground ,monokai-fg))))
    `(grep-error-face ((t (:foreground ,monokai-red :weight bold :underline t))))
-   `(grep-hit-face ((t (:foreground ,monokai-green))))
-   `(grep-match-face ((t (:foreground ,monokai-orange :weight bold))))
-   `(match ((t (:background ,monokai-bg-1 :foreground ,monokai-orange :weight bold))))
+   `(grep-hit-face ((t (:foreground ,monokai-orange))))
+   `(grep-match-face ((t (:foreground ,monokai-green :weight bold))))
+   `(match ((t (:background ,monokai-bg-1 :foreground ,monokai-green :weight bold))))
 
    ;; faces used by isearch
-   `(isearch ((t (:foreground ,monokai-orange :background ,monokai-bg+1))))
+   `(isearch ((t (:foreground ,monokai-orange :background ,monokai-bg))))
    `(isearch-fail ((t (:foreground ,monokai-fg+1 :background ,monokai-red))))
-   `(lazy-highlight ((t (:foreground ,monokai-fg+1 :background ,monokai-bg-1))))
+   `(lazy-highlight ((t (:foreground ,monokai-fg+1 :background ,monokai-bg+1))))
 
    `(menu ((t (:foreground ,monokai-fg :background ,monokai-bg))))
    `(minibuffer-prompt ((t (:foreground ,monokai-blue))))
@@ -147,6 +147,7 @@
    `(font-lock-keyword-face ((t (:foreground ,monokai-red :weight bold))))
    `(font-lock-negation-char-face ((t (:foreground ,monokai-fg-1))))
    `(font-lock-preprocessor-face ((t (:foreground ,monokai-red))))
+   `(font-lock-reference-face ((t (:foreground ,monokai-purple))))
    `(font-lock-string-face ((t (:foreground ,monokai-yellow))))
    `(font-lock-type-face ((t (:foreground ,monokai-blue))))
    `(font-lock-variable-name-face ((t (:foreground ,monokai-orange))))
@@ -234,8 +235,10 @@
    `(flycheck-warning-face ((t (:foreground ,monokai-yellow :weight bold :underline t))))
 
    ;; flymake
-   `(flymake-errline ((t (:foreground ,monokai-red :weight bold :underline t))))
-   `(flymake-warnline ((t (:foreground ,monokai-yellow :weight bold :underline t))))
+   `(flymake-errline ((t (:foreground ,monokai-red+1 :background ,monokai-bg-2
+                                      :weight bold :underline t))))
+   `(flymake-warnline ((t (:foreground ,monokai-orange+1 :background ,monokai-bg-2
+                                       :weight bold :underline t))))
 
    ;; flyspell
    `(flyspell-duplicate ((t (:foreground ,monokai-yellow :weight bold :underline t))))

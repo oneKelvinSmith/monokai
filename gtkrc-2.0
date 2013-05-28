@@ -1,0 +1,18 @@
+# This file automatically written by the Pidgin GTK+ Theme Control plugin.
+# Any changes to this file will be overwritten by the plugin when told to
+# write the settings again.
+# The FAQ (http://developer.pidgin.im/wiki/FAQ) contains some further examples
+# of possible pidgin gtkrc settings.
+style "purplerc_style"
+{
+        text[NORMAL] = "#F8F8F2"
+        base[NORMAL] = "#272822"
+	GtkIMHtml::hyperlink-color = "#F92672"
+	GtkIMHtml::hyperlink-visited-color = "#AE81FF"
+	GtkIMHtml::send-name-color = "#A6E22E"
+	GtkIMHtml::receive-name-color = "#FD971F"
+	GtkIMHtml::highlight-name-color = "#A1EFE4"
+	GtkIMHtml::action-name-color = "#66D9EF"
+	GtkIMHtml::typing-notification-color = "#75715E"
+}
+widget_class "*" style "purplerc_style"
