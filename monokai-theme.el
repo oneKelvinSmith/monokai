@@ -38,8 +38,13 @@
       ;; Monokai palette
       ;; colors with +x are lighter, colors with -x are darker
       (monokai-bg-1 "#171A0B")
+      ;; 39 40 34
       (monokai-bg "#272822")
-      (monokai-bg+1 "#49483E")
+      ;; 50 50 42
+      (monokai-bg+1 "#32322A")
+      ;; 56 56 48
+      (monokai-bg+2 "#383830")
+      (monokai-bg+3 "#49483E")
       (monokai-red-1 "#A20C41")
       (monokai-red "#F92672")
       (monokai-red+1 "#FC5C94")
@@ -83,13 +88,13 @@
 
    ;;; basic coloring
    `(default ((t (:foreground ,monokai-fg :background ,monokai-bg))))
-   `(cursor ((t (:foreground ,monokai-red :background ,monokai-bg+1))))
+   `(cursor ((t (:foreground ,monokai-bg-1 :background ,monokai-fg))))
    `(escape-glyph ((t (:foreground ,monokai-fg-1 :bold t))))
    `(fringe ((t (:foreground ,monokai-fg :background ,monokai-bg))))
    `(header-line ((t (:foreground ,monokai-fg-1
                                   :background ,monokai-bg-1
                                   :box (:line-width -1 :style released-button)))))
-   `(highlight ((t (:background ,monokai-bg+1))))
+   `(highlight ((t (:background ,monokai-bg+2))))
 
    ;;; compilation
    `(compilation-column-face ((t (:foreground ,monokai-yellow))))
@@ -99,8 +104,8 @@
    `(compilation-info-face ((t (:foreground ,monokai-blue))))
    `(compilation-info ((t (:foreground ,monokai-purple :underline t))))
    `(compilation-leave-directory-face ((t (:foreground ,monokai-green))))
-   `(compilation-line-face ((t (:foreground ,monokai-fg-1))))
-   `(compilation-line-number ((t (:foreground ,monokai-fg-1))))
+   `(compilation-line-face ((t (:foreground ,monokai-bg+3))))
+   `(compilation-line-number ((t (:foreground ,monokai-bg+3))))
    `(compilation-message-face ((t (:foreground ,monokai-blue))))
    `(compilation-warning-face ((t (:foreground ,monokai-orange :weight bold :underline t))))
 
@@ -112,27 +117,27 @@
    `(match ((t (:background ,monokai-bg-1 :foreground ,monokai-orange :weight bold))))
 
    ;; faces used by isearch
-   `(isearch ((t (:foreground ,monokai-red :background ,monokai-bg-1))))
+   `(isearch ((t (:foreground ,monokai-cyan :background ,monokai-bg-1))))
    `(isearch-fail ((t (:foreground ,monokai-fg+1 :background ,monokai-red))))
-   `(lazy-highlight ((t (:foreground ,monokai-fg-1 :background ,monokai-bg+1))))
+   `(lazy-highlight ((t (:foreground ,monokai-cyan-1 :background ,monokai-bg+2))))
 
    `(menu ((t (:foreground ,monokai-fg :background ,monokai-bg))))
-   `(minibuffer-prompt ((t (:foreground ,monokai-red))))
+   `(minibuffer-prompt ((t (:foreground ,monokai-cyan))))
    `(mode-line
      ((,class (:foreground ,monokai-fg
-                           :background ,monokai-bg+1
+                           :background ,monokai-bg+2
                            :box (:line-width -1 :style released-button)))
       (t :inverse-video t)))
    `(mode-line-buffer-id ((t (:foreground ,monokai-green :weight bold))))
    `(mode-line-inactive
-     ((t (:foreground ,monokai-bg+1
+     ((t (:foreground ,monokai-bg+3
                       :background ,monokai-bg
                       :box (:line-width -1 :style released-button)))))
    `(region ((,class (:background ,monokai-bg-1))
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,monokai-bg))))
    `(trailing-whitespace ((t (:background ,monokai-red))))
-   `(vertical-border ((t (:foreground ,monokai-bg+1))))
+   `(vertical-border ((t (:foreground ,monokai-bg+2))))
 
    ;;; font lock
    `(font-lock-builtin-face ((t (:foreground ,monokai-green))))
@@ -207,7 +212,7 @@
    `(diff-header ((,class (:background ,monokai-bg))
                   (t (:background ,monokai-fg :foreground ,monokai-bg))))
    `(diff-file-header
-     ((,class (:background ,monokai-bg+1 :foreground ,monokai-fg :bold t))
+     ((,class (:background ,monokai-bg+2 :foreground ,monokai-fg :bold t))
       (t (:background ,monokai-fg :foreground ,monokai-bg :bold t))))
 
    ;; ert
@@ -322,8 +327,8 @@
    `(gnus-group-news-3-empty ((t (:foreground ,monokai-green+1))))
    `(gnus-group-news-4-empty ((t (:foreground ,monokai-cyan))))
    `(gnus-group-news-5-empty ((t (:foreground ,monokai-cyan+1))))
-   `(gnus-group-news-6-empty ((t (:foreground ,monokai-bg+1))))
-   `(gnus-group-news-low-empty ((t (:foreground ,monokai-bg+1))))
+   `(gnus-group-news-6-empty ((t (:foreground ,monokai-bg+2))))
+   `(gnus-group-news-low-empty ((t (:foreground ,monokai-bg+2))))
    `(gnus-signature ((t (:foreground ,monokai-fg-1))))
    `(gnus-x ((t (:background ,monokai-fg :foreground ,monokai-bg))))
 
@@ -339,8 +344,8 @@
                       :underline nil
                       :weight bold
                       :box (:line-width -1 :style released-button)))))
-   `(helm-selection ((t (:background ,monokai-bg+1 :underline nil))))
-   `(helm-selection-line ((t (:background ,monokai-bg+1))))
+   `(helm-selection ((t (:background ,monokai-bg+2 :underline nil))))
+   `(helm-selection-line ((t (:background ,monokai-bg+2))))
    `(helm-visible-mark ((t (:foreground ,monokai-bg :background ,monokai-green))))
    `(helm-candidate-number ((t (:foreground ,monokai-red :background ,monokai-bg-1))))
 
@@ -359,7 +364,7 @@
    `(ido-only-match ((t (:foreground ,monokai-orange :weight bold))))
    `(ido-subdir ((t (:foreground ,monokai-yellow))))
 
-   ;; js2-mode
+   ;; Js2-mode
    `(js2-warning-face ((t (:underline ,monokai-orange))))
    `(js2-error-face ((t (:foreground ,monokai-red :weight bold))))
    `(js2-jsdoc-tag-face ((t (:foreground ,monokai-green))))
@@ -387,7 +392,7 @@
    ;; magit
    `(magit-section-title ((t (:foreground ,monokai-fg-1 :weight bold))))
    `(magit-branch ((t (:foreground ,monokai-orange :weight bold))))
-   `(magit-item-highlight ((t (:background ,monokai-bg+1))))
+   `(magit-item-highlight ((t (:background ,monokai-bg+2))))
 
    ;; message-mode
    `(message-cited-text ((t (:inherit font-lock-comment))))
@@ -457,9 +462,9 @@
    ;; mumamo
    `(mumamo-background-chunk-major ((t (:background nil))))
    `(mumamo-background-chunk-submode1 ((t (:background ,monokai-bg-1))))
-   `(mumamo-background-chunk-submode2 ((t (:background ,monokai-bg+1))))
+   `(mumamo-background-chunk-submode2 ((t (:background ,monokai-bg+2))))
    `(mumamo-background-chunk-submode3 ((t (:background ,monokai-fg-1))))
-   `(mumamo-background-chunk-submode4 ((t (:background ,monokai-bg+1))))
+   `(mumamo-background-chunk-submode4 ((t (:background ,monokai-bg+2))))
 
    ;; org-mode
    `(org-agenda-date-today
@@ -467,7 +472,7 @@
    `(org-agenda-structure
      ((t (:inherit font-lock-comment-face))))
    `(org-archived ((t (:foreground ,monokai-fg :weight bold))))
-   `(org-checkbox ((t (:background ,monokai-bg+1 :foreground ,monokai-fg+1
+   `(org-checkbox ((t (:background ,monokai-bg+2 :foreground ,monokai-fg+1
                                    :box (:line-width 1 :style released-button)))))
    `(org-date ((t (:foreground ,monokai-blue :underline t))))
    `(org-deadline-announce ((t (:foreground ,monokai-red))))
@@ -508,12 +513,12 @@
    `(outline-8 ((t (:foreground ,monokai-green))))
 
    ;; rainbow-delimiters
-   `(rainbow-delimiters-depth-1-face ((t (:foreground ,monokai-fg))))
+   `(rainbow-delimiters-depth-1-face ((t (:foreground ,monokai-orange))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,monokai-blue))))
-   `(rainbow-delimiters-depth-3-face ((t (:foreground ,monokai-red))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground ,monokai-purple))))
    `(rainbow-delimiters-depth-4-face ((t (:foreground ,monokai-green))))
-   `(rainbow-delimiters-depth-5-face ((t (:foreground ,monokai-purple))))
-   `(rainbow-delimiters-depth-6-face ((t (:foreground ,monokai-cyan))))
+   `(rainbow-delimiters-depth-5-face ((t (:foreground ,monokai-cyan))))
+   `(rainbow-delimiters-depth-6-face ((t (:foreground ,monokai-red))))
    `(rainbow-delimiters-depth-7-face ((t (:foreground ,monokai-orange))))
    `(rainbow-delimiters-depth-8-face ((t (:foreground ,monokai-blue+1))))
    `(rainbow-delimiters-depth-9-face ((t (:foreground ,monokai-red+1))))
@@ -583,11 +588,11 @@
                                       :background ,monokai-bg
                                       :box (:line-width -1 :style pressed-button)))))
    `(tabbar-unselected ((t (:foreground ,monokai-fg
-                                        :background ,monokai-bg+1
+                                        :background ,monokai-bg+2
                                         :box (:line-width -1 :style released-button)))))
 
    ;; term
-   `(term-color-black ((t (:foreground ,monokai-bg+1
+   `(term-color-black ((t (:foreground ,monokai-bg+2
                                        :background ,monokai-fg-1))))
    `(term-color-red ((t (:foreground ,monokai-red
                                        :background ,monokai-red+1))))
@@ -607,7 +612,7 @@
    '(term-default-bg-color ((t (:inherit term-color-black))))
 
    ;; volatile-highlights
-   `(vhl/default-face ((t (:background ,monokai-bg+1))))
+   `(vhl/default-face ((t (:background ,monokai-bg+2))))
 
    ;; emacs-w3m
    `(w3m-anchor ((t (:foreground ,monokai-fg-1 :underline t
