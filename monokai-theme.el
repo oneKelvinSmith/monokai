@@ -112,8 +112,8 @@ Also bind `class' to ((class color) (min-colors 89))."
                                   :background ,monokai-bg-1
                                   :box (:line-width -1 :style released-button)))))
    `(highlight ((t (:background ,monokai-bg+2))))
-   `(success ((t (:foreground ,zenburn-green :weight bold))))
-   `(warning ((t (:foreground ,zenburn-orange :weight bold))))
+   `(success ((t (:foreground ,monokai-green :weight bold))))
+   `(warning ((t (:foreground ,monokai-orange :weight bold))))
    `(menu ((t (:foreground ,monokai-fg :background ,monokai-bg))))
    `(minibuffer-prompt ((t (:foreground ,monokai-cyan))))
    `(mode-line
@@ -227,9 +227,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(clojure-test-error-face ((t (:foreground ,monokai-orange :weight bold :underline t))))
    `(clojure-test-success-face ((t (:foreground ,monokai-green :weight bold :underline t))))
 ;;;;; ctable
-   `(ctbl:face-cell-select ((t (:background ,zenburn-blue :foreground ,zenburn-bg))))
-   `(ctbl:face-continue-bar ((t (:background ,zenburn-bg-05 :foreground ,zenburn-bg))))
-   `(ctbl:face-row-select ((t (:background ,zenburn-cyan :foreground ,zenburn-bg))))
+   `(ctbl:face-cell-select ((t (:background ,monokai-blue :foreground ,monokai-bg))))
+   `(ctbl:face-continue-bar ((t (:background ,monokai-bg-1 :foreground ,monokai-bg))))
+   `(ctbl:face-row-select ((t (:background ,monokai-cyan :foreground ,monokai-bg))))
 ;;;;; diff
    `(diff-added ((,class (:foreground ,monokai-green :background nil))
                  (t (:foreground ,monokai-green-1 :background nil))))
@@ -268,7 +268,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(diredp-rare-priv ((t (:foreground ,monokai-red-1))))
    `(diredp-read-priv ((t (:foreground ,monokai-green-1))))
    `(diredp-symlink ((t (:foreground ,monokai-yellow))))
-   `(diredp-write-priv ((t (:foreground ,zenburn-magenta))))
+   `(diredp-write-priv ((t (:foreground ,monokai-magenta))))
 ;;;;; ert
    `(ert-test-result-expected ((t (:foreground ,monokai-green :background ,monokai-bg))))
    `(ert-test-result-unexpected ((t (:foreground ,monokai-red :background ,monokai-bg))))
@@ -412,7 +412,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; guide-key
    `(guide-key/highlight-command-face ((t (:foreground ,monokai-blue))))
    `(guide-key/key-face ((t (:foreground ,monokai-green))))
-   `(guide-key/prefix-command-face ((t (:foreground ,zenburn-green+1))))
+   `(guide-key/prefix-command-face ((t (:foreground ,monokai-green+1))))
 ;;;;; helm
    `(helm-header
      ((t (:foreground ,monokai-green
