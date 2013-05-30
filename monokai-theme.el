@@ -115,7 +115,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(success ((t (:foreground ,monokai-green :weight bold))))
    `(warning ((t (:foreground ,monokai-orange :weight bold))))
    `(menu ((t (:foreground ,monokai-fg :background ,monokai-bg))))
-   `(minibuffer-prompt ((t (:foreground ,monokai-cyan))))
+   `(minibuffer-prompt ((t (:foreground ,monokai-orange))))
    `(mode-line
      ((,class (:foreground ,monokai-fg
                            :background ,monokai-bg+2
@@ -146,13 +146,13 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; grep
    `(grep-context-face ((t (:foreground ,monokai-fg))))
    `(grep-error-face ((t (:foreground ,monokai-red :weight bold :underline t))))
-   `(grep-hit-face ((t (:foreground ,monokai-orange))))
-   `(grep-match-face ((t (:foreground ,monokai-green :weight bold))))
+   `(grep-hit-face ((t (:foreground ,monokai-magenta))))
+   `(grep-match-face ((t (:foreground ,monokai-orange :weight bold))))
    `(match ((t (:foreground ,monokai-green :background ,monokai-bg-1 :weight bold))))
 ;;;;; isearch
-   `(isearch ((t (:foreground ,monokai-cyan :background ,monokai-bg-1))))
+   `(isearch ((t (:foreground ,monokai-orange :background ,monokai-bg-1))))
    `(isearch-fail ((t (:foreground ,monokai-fg+1 :background ,monokai-red))))
-   `(lazy-highlight ((t (:foreground ,monokai-cyan-1 :background ,monokai-bg+2))))
+   `(lazy-highlight ((t (:foreground ,monokai-magenta :background ,monokai-bg-1))))
 ;;;;; font lock
    `(font-lock-builtin-face ((t (:foreground ,monokai-green))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,monokai-fg-1))))
@@ -439,7 +439,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(hl-sexp-face ((,class (:background ,monokai-bg+1))
                    (t :weight bold)))
 ;;;;; ido-mode
-   `(ido-first-match ((t (:foreground ,monokai-fg+1 :background ,monokai-bg :weight bold))))
+   `(ido-first-match ((t (:foreground ,monokai-cyan :background ,monokai-bg :weight bold))))
    `(ido-only-match ((t (:foreground ,monokai-green :background ,monokai-bg :weight bold))))
    `(ido-subdir ((t (:foreground ,monokai-blue :background ,monokai-bg))))
 ;;;;; Js2-mode
