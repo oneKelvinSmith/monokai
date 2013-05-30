@@ -115,7 +115,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(success ((t (:foreground ,monokai-green :weight bold))))
    `(warning ((t (:foreground ,monokai-orange :weight bold))))
    `(menu ((t (:foreground ,monokai-fg :background ,monokai-bg))))
-   `(minibuffer-prompt ((t (:foreground ,monokai-orange))))
+   `(minibuffer-prompt ((t (:foreground ,monokai-blue))))
    `(mode-line
      ((,class (:foreground ,monokai-fg
                            :background ,monokai-bg+2
@@ -439,7 +439,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(hl-sexp-face ((,class (:background ,monokai-bg+1))
                    (t :weight bold)))
 ;;;;; ido-mode
-   `(ido-first-match ((t (:foreground ,monokai-cyan :background ,monokai-bg :weight bold))))
+   `(ido-first-match ((t (:foreground ,monokai-orange :background ,monokai-bg :weight bold))))
    `(ido-only-match ((t (:foreground ,monokai-green :background ,monokai-bg :weight bold))))
    `(ido-subdir ((t (:foreground ,monokai-blue :background ,monokai-bg))))
 ;;;;; Js2-mode
