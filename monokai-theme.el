@@ -21,7 +21,7 @@
 
 ;;; Commentary:
 ;;
-;; A port of the popular Vim theme Monokai for Emacs 24, built on top
+;; A port of the popular Textmate theme Monokai for Emacs 24, built on top
 ;; of the new built-in theme support in Emacs 24.
 ;;
 ;;; Credits:
@@ -205,8 +205,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(font-latex-sedate ((t (:foreground ,monokai-fg-1 :weight bold ))))
    `(font-latex-title-4 ((t (:inherit variable-pitch :weight bold))))
 ;;;;; auto-complete
-   `(ac-candidate-face ((t (:background ,monokai-bg-1 :foreground ,monokai-blue))))
-   `(ac-selection-face ((t (:background ,monokai-bg :foreground ,monokai-green))))
+   `(ac-candidate-face ((t (:background ,monokai-bg+1 :foreground ,monokai-orange))))
+   `(ac-selection-face ((t (:background ,monokai-bg+2 :foreground ,monokai-green))))
    `(popup-tip-face ((t (:background ,monokai-bg :foreground ,monokai-fg-1))))
    `(popup-scroll-bar-foreground-face ((t (:background ,monokai-blue-1))))
    `(popup-scroll-bar-background-face ((t (:background ,monokai-bg-1))))
@@ -654,13 +654,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(rcirc-keyword ((t (:foreground ,monokai-red :bold t))))
 ;;;;; rhtml-mode
    `(erb-face ((t (:foreground ,monokai-fg+1 :background ,monokai-bg-1))))
-   `(erb-delim-face ((t (:foreground ,monokai-red :background ,monokai-bg-1))))
+   `(erb-delim-face ((t (:foreground ,monokai-cyan-1 :background ,monokai-bg-1))))
    `(erb-exec-face ((t (:foreground ,monokai-fg+1 :background ,monokai-bg-1))))
-   `(erb-exec-delim-face ((t (:foreground ,monokai-red :background ,monokai-bg-1))))
+   `(erb-exec-delim-face ((t (:foreground ,monokai-cyan-1 :background ,monokai-bg-1))))
    `(erb-out-face ((t (:foreground ,monokai-fg+1 :background ,monokai-bg-1))))
-   `(erb-out-delim-face ((t (:foreground ,monokai-red-1 :background ,monokai-bg-1))))
+   `(erb-out-delim-face ((t (:foreground ,monokai-cyan-1 :background ,monokai-bg-1))))
    `(erb-comment-face ((t (:foreground ,monokai-fg-1 :background ,monokai-bg-1))))
-   `(erb-comment-delim-face ((t (:foreground ,monokai-fg-1 :background ,monokai-bg-1))))
+   `(erb-comment-delim-face ((t (:foreground ,monokai-cyan-1 :background ,monokai-bg-1))))
 ;;;;; rpm-mode
    `(rpm-spec-dir-face ((t (:foreground ,monokai-green))))
    `(rpm-spec-doc-face ((t (:foreground ,monokai-blue))))
@@ -679,8 +679,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(rst-level-5-face ((t (:foreground ,monokai-purple))))
    `(rst-level-6-face ((t (:foreground ,monokai-red))))
 ;;;;; show-paren
-   `(show-paren-mismatch ((t (:foreground ,monokai-red :background ,monokai-bg :weight bold))))
-   `(show-paren-match ((t (:foreground ,monokai-green :background ,monokai-bg :weight bold))))
+   `(show-paren-mismatch ((t (:foreground ,monokai-magenta :background ,monokai-bg :weight bold))))
+   `(show-paren-match ((t (:foreground ,monokai-cyan :background ,monokai-bg :weight bold))))
 ;;;;; sml-mode-line
    '(sml-modeline-end-face ((t :inherit default :width condensed)))
 ;;;;; SLIME
