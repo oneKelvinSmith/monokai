@@ -232,10 +232,10 @@ foreground ,monokai-fg-1
    `(ctbl:face-row-select ((t (:background ,monokai-cyan :foreground ,monokai-bg))))
 ;;;;; diff
    `(diff-added ((,class (:foreground ,monokai-green :background nil))
-                 (t (:foreground ,monokai-green-1 :background nil))))
+                 (t (:foreground ,monokai-green :background nil))))
    `(diff-changed ((t (:foreground ,monokai-yellow))))
    `(diff-removed ((,class (:foreground ,monokai-red :background nil))
-                   (t (:foreground ,monokai-red-1 :background nil))))
+                   (t (:foreground ,monokai-red :background nil))))
    `(diff-refine-added ((t :inherit diff-added :weight bold)))
    `(diff-refine-change ((t :inherit diff-changed :weight bold)))
    `(diff-refine-removed ((t :inherit diff-removed :weight bold)))
@@ -431,10 +431,9 @@ foreground ,monokai-fg-1
    `(helm-candidate-number ((t (:foreground ,monokai-green+2 :background ,monokai-bg-1))))
    `(helm-ff-directory ((t (:foreground ,monokai-magenta))))
 ;;;;; hl-line-mode
-   `(hl-line ((nil (:background ,monokai-bg+1 nil :inherit t))))
+   `(hl-line((nil (:background ,monokai-bg+1 :inherit t))))
 ;;;;; hl-sexp
-   `(hl-sexp-face ((,class (:background ,monokai-bg+1))
-                   (t :weight bold)))
+   `(hl-sexp-face ((nil (:background ,monokai-bg+1 :inherit t))))
 ;;;;; ido-mode
    `(ido-first-match ((t (:foreground ,monokai-orange :background ,monokai-bg :weight bold))))
    `(ido-only-match ((t (:foreground ,monokai-green :background ,monokai-bg :weight bold))))
