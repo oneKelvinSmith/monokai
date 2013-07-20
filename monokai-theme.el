@@ -38,45 +38,45 @@
 ;;; Color Palette
 
 (defvar monokai-colors-alist
-    '(("monokai-bg-1"      . "#171A0B")
-      ("monokai-bg"        . "#272822")
-      ("monokai-bg+1"      . "#3E3D31")
-      ("monokai-bg+2"      . "#49483E")
-      ("monokai-red-1"     . "#A20C41")
-      ("monokai-red"       . "#F92672")
-      ("monokai-red+1"     . "#FC5C94")
-      ("monokai-red+2"     . "#FC87B0")
-      ("monokai-green-1"   . "#67930F")
-      ("monokai-green"     . "#A6E22E")
-      ("monokai-green+1"   . "#C1F161")
-      ("monokai-green+2"   . "#CDF187")
-      ("monokai-orange-1"  . "#A45E0A")
-      ("monokai-orange"    . "#FD971F")
-      ("monokai-orange+1"  . "#FEB257")
-      ("monokai-orange+2"  . "#FEC683")
-      ("monokai-yellow-1"  . "#968B26")
-      ("monokai-yellow"    . "#E6DB74")
-      ("monokai-yellow+1"  . "#F3EA98")
-      ("monokai-yellow+2"  . "#F3ECB0")
-      ("monokai-blue-1"    . "#21889B")
-      ("monokai-blue"      . "#66D9EF")
-      ("monokai-blue+1"    . "#8DE6F7")
-      ("monokai-blue+2"    . "#A9EBF7")
-      ("monokai-purple-1"  . "#562AA6")
-      ("monokai-purple"    . "#AE81FF")
-      ("monokai-purple+1"  . "#C2A1FF")
-      ("monokai-purple+2"  . "#D2BAFF")
-      ("monokai-magenta-1" . "#A41F99")
-      ("monokai-magenta"   . "#FD5FF0")
-      ("monokai-magenta+1" . "#FE87F4")
-      ("monokai-magenta+2" . "#FEA7F7")
-      ("monokai-cyan-1"    . "#349B8D")
-      ("monokai-cyan"      . "#A1EFE4")
-      ("monokai-cyan+1"    . "#BBF7EF")
-      ("monokai-cyan+2"    . "#CBF7F1")
-      ("monokai-fg-1"      . "#75715E")
-      ("monokai-fg"        . "#F8F8F2")
-      ("monokai-fg+1"      . "#F8F8F0"))
+  '(("monokai-bg-1"      . "#171A0B")
+    ("monokai-bg"        . "#272822")
+    ("monokai-bg+1"      . "#3E3D31")
+    ("monokai-bg+2"      . "#49483E")
+    ("monokai-red-1"     . "#A20C41")
+    ("monokai-red"       . "#F92672")
+    ("monokai-red+1"     . "#FC5C94")
+    ("monokai-red+2"     . "#FC87B0")
+    ("monokai-green-1"   . "#67930F")
+    ("monokai-green"     . "#A6E22E")
+    ("monokai-green+1"   . "#C1F161")
+    ("monokai-green+2"   . "#CDF187")
+    ("monokai-orange-1"  . "#A45E0A")
+    ("monokai-orange"    . "#FD971F")
+    ("monokai-orange+1"  . "#FEB257")
+    ("monokai-orange+2"  . "#FEC683")
+    ("monokai-yellow-1"  . "#968B26")
+    ("monokai-yellow"    . "#E6DB74")
+    ("monokai-yellow+1"  . "#F3EA98")
+    ("monokai-yellow+2"  . "#F3ECB0")
+    ("monokai-blue-1"    . "#21889B")
+    ("monokai-blue"      . "#66D9EF")
+    ("monokai-blue+1"    . "#8DE6F7")
+    ("monokai-blue+2"    . "#A9EBF7")
+    ("monokai-purple-1"  . "#562AA6")
+    ("monokai-purple"    . "#AE81FF")
+    ("monokai-purple+1"  . "#C2A1FF")
+    ("monokai-purple+2"  . "#D2BAFF")
+    ("monokai-magenta-1" . "#A41F99")
+    ("monokai-magenta"   . "#FD5FF0")
+    ("monokai-magenta+1" . "#FE87F4")
+    ("monokai-magenta+2" . "#FEA7F7")
+    ("monokai-cyan-1"    . "#349B8D")
+    ("monokai-cyan"      . "#A1EFE4")
+    ("monokai-cyan+1"    . "#BBF7EF")
+    ("monokai-cyan+2"    . "#CBF7F1")
+    ("monokai-fg-1"      . "#75715E")
+    ("monokai-fg"        . "#F8F8F2")
+    ("monokai-fg+1"      . "#F8F8F0"))
   "List of Monokai colors.
 Each element has the form (NAME . HEX).
 
@@ -95,8 +95,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 
 ;;; Theme Faces
 (monokai-with-color-variables
- (custom-theme-set-faces
-  'monokai
+  (custom-theme-set-faces
+   'monokai
 ;;;; Built-in
 ;;;;; basic coloring
    `(button ((t (:underline t))))
@@ -107,10 +107,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(cursor ((t (:foreground ,monokai-bg-1 :background ,monokai-fg))))
    `(escape-glyph ((t (:foreground ,monokai-fg-1 :bold t))))
    `(fringe ((t (:foreground ,monokai-fg :background ,monokai-bg))))
-   `(header-line ((t (:
-foreground ,monokai-fg-1
-                                  :background ,monokai-bg-1
-                                  :box (:line-width -1 :style released-button)))))
+   `(header-line ((t (:foreground ,monokai-fg-1
+                      :background ,monokai-bg-1
+                      :box (:line-width -1 :style released-button)))))
    `(highlight ((t (:foreground ,monokai-fg+1 :background ,monokai-bg+2))))
    `(success ((t (:foreground ,monokai-green :weight bold))))
    `(warning ((t (:foreground ,monokai-orange :weight bold))))
@@ -205,10 +204,10 @@ foreground ,monokai-fg-1
    `(font-latex-sedate ((t (:foreground ,monokai-fg-1 :weight bold ))))
    `(font-latex-title-4 ((t (:inherit variable-pitch :weight bold))))
 ;;;;; auto-complete
-   `(ac-candidate-face ((t (:background ,monokai-bg+1 :foreground ,monokai-orange))))
-   `(ac-selection-face ((t (:background ,monokai-bg+2 :foreground ,monokai-green))))
-   `(popup-tip-face ((t (:background ,monokai-bg :foreground ,monokai-fg-1))))
-   `(popup-scroll-bar-foreground-face ((t (:background ,monokai-blue-1))))
+   `(ac-candidate-face ((t (:background ,monokai-bg+1 :foreground ,monokai-fg-1))))
+   `(ac-selection-face ((t (:background ,monokai-bg+2 :foreground ,monokai-orange))))
+   `(popup-tip-face ((t (:background ,monokai-bg+2 :foreground ,monokai-orange))))
+   `(popup-scroll-bar-foreground-face ((t (:background ,monokai-fg-1))))
    `(popup-scroll-bar-background-face ((t (:background ,monokai-bg-1))))
    `(popup-isearch-match ((t (:background ,monokai-bg :foreground ,monokai-fg))))
 ;;;;; android mode
@@ -220,8 +219,8 @@ foreground ,monokai-fg-1
 ;;;;; bm
    `(bm-face ((t (:background ,monokai-yellow-1 :foreground ,monokai-bg))))
    `(bm-fringe-face ((t (:background ,monokai-yellow-1 :foreground ,monokai-bg))))
-   `(bm-fringe-persistent-face ((t (:background ,monokai-green-1 :foreground ,monokai-bg))))
-   `(bm-persistent-face ((t (:background ,monokai-green-1 :foreground ,monokai-bg))))
+   `(bm-fringe-persistent-face ((t (:background ,monokai-orange-1 :foreground ,monokai-bg))))
+   `(bm-persistent-face ((t (:background ,monokai-orange-1 :foreground ,monokai-bg))))
 ;;;;; clojure-test-mode
    `(clojure-test-failure-face ((t (:foreground ,monokai-red :weight bold :underline t))))
    `(clojure-test-error-face ((t (:foreground ,monokai-orange :weight bold :underline t))))
@@ -543,9 +542,15 @@ foreground ,monokai-fg-1
    `(mew-face-eof-message ((t (:foreground ,monokai-red))))
    `(mew-face-eof-part ((t (:foreground ,monokai-yellow))))
 ;;;;; mic-paren
-   `(paren-face-match ((t (:foreground ,monokai-cyan :background ,monokai-bg :weight bold))))
-   `(paren-face-mismatch ((t (:foreground ,monokai-bg :background ,monokai-magenta :weight bold))))
-   `(paren-face-no-match ((t (:foreground ,monokai-bg :background ,monokai-red :weight bold))))
+   `(paren-face-match ((t (:foreground ,monokai-bg-1
+                                       :background ,monokai-orange
+                                       :weight bold))))
+   `(paren-face-mismatch ((t (:foreground ,monokai-bg-1
+                                          :background ,monokai-magenta
+                                          :weight bold))))
+   `(paren-face-no-match ((t (:foreground ,monokai-bg-1
+                                          :background ,monokai-purple
+                                          :weight bold))))
 ;;;;; mingus
    `(mingus-directory-face ((t (:foreground ,monokai-blue))))
    `(mingus-pausing-face ((t (:foreground ,monokai-magenta))))
@@ -675,8 +680,12 @@ foreground ,monokai-fg-1
    `(rst-level-5-face ((t (:foreground ,monokai-purple))))
    `(rst-level-6-face ((t (:foreground ,monokai-red))))
 ;;;;; show-paren
-   `(show-paren-mismatch ((t (:foreground ,monokai-magenta :background ,monokai-bg :weight bold))))
-   `(show-paren-match ((t (:foreground ,monokai-cyan :background ,monokai-bg :weight bold))))
+   `(show-paren-mismatch ((t (:foreground ,monokai-bg-1
+                                          :background ,monokai-red
+                                          :weight bold))))
+   `(show-paren-match ((t (:foreground ,monokai-bg-1
+                                       :background ,monokai-orange
+                                       ::weight bold))))
 ;;;;; sml-mode-line
    '(sml-modeline-end-face ((t :inherit default :width condensed)))
 ;;;;; SLIME
@@ -691,24 +700,24 @@ foreground ,monokai-fg-1
                                         :background ,monokai-bg+2
                                         :box (:line-width -1 :style released-button)))))
 ;;;;; term
-   `(term-color-black ((t (:foreground ,monokai-bg+2
-                                       :background ,monokai-fg-1))))
+   `(term-color-black ((t (:foreground ,monokai-bg
+                                       :background ,monokai-bg+1))))
    `(term-color-red ((t (:foreground ,monokai-red
-                                       :background ,monokai-red+1))))
+                                     :background ,monokai-red+1))))
    `(term-color-green ((t (:foreground ,monokai-green
                                        :background ,monokai-green+1))))
    `(term-color-yellow ((t (:foreground ,monokai-orange
-                                       :background ,monokai-orange+1))))
-   `(term-color-blue ((t (:foreground ,monokai-blue-1
+                                        :background ,monokai-orange+1))))
+   `(term-color-blue ((t (:foreground ,monokai-blue
                                       :background ,monokai-blue+1))))
    `(term-color-magenta ((t (:foreground ,monokai-purple
                                          :background ,monokai-purple+1))))
    `(term-color-cyan ((t (:foreground ,monokai-cyan
-                                       :background ,monokai-cyan+1))))
+                                      :background ,monokai-cyan+1))))
    `(term-color-white ((t (:foreground ,monokai-fg
                                        :background ,monokai-fg+1))))
-   '(term-default-fg-color ((t (:inherit term-color-white))))
-   '(term-default-bg-color ((t (:inherit term-color-black))))
+   `(term-default-fg-color ((t (:foreground "#FFFFFF"))))
+   '(term-default-bg-color ((t (:foreground "#222222"))))
 ;;;;; volatile-highlights
    `(vhl/default-face ((t (:background ,monokai-bg+2))))
 ;;;;; emacs-w3m
@@ -768,43 +777,42 @@ foreground ,monokai-fg-1
 ;;;;; yascroll
    `(yascroll:thumb-text-area ((t (:background ,monokai-bg-1))))
    `(yascroll:thumb-fringe ((t (:background ,monokai-bg-1 :foreground ,monokai-bg-1))))
-   ))
+  ))
 
 ;;; Theme Variables
 (monokai-with-color-variables
   (custom-theme-set-variables
    'monokai
 ;;;;; ansi-color
-   `(ansi-color-names-vector [,monokai-bg ,monokai-red ,monokai-green ,monokai-orange
-                                          ,monokai-blue ,monokai-purple ,monokai-cyan ,monokai-fg])
+   `(ansi-color-names-vector [,monokai-bg ,monokai-red ,monokai-green ,monokai-orange ,monokai-blue ,monokai-purple ,monokai-cyan ,monokai-fg])
+
 ;;;;; fill-column-indicator
-   `(fci-rule-color ,monokai-bg-1)
+  `(fci-rule-color ,monokai-bg-1)
 ;;;;; vc-annotate
-   `(vc-annotate-color-map
-     '(( 20. . ,monokai-fg-1)
-       ( 40. . ,monokai-bg+2)
-       ( 60. . ,monokai-red)
-       ( 80. . ,monokai-red+1)
-       (100. . ,monokai-orange)
-       (120. . ,monokai-orange+1)
-       (140. . ,monokai-green)
-       (160. . ,monokai-green+1)
-       (180. . ,monokai-yellow)
-       (200. . ,monokai-yellow+1)
-       (220. . ,monokai-blue)
-       (240. . ,monokai-blue+1)
-       (260. . ,monokai-purple)
-       (280. . ,monokai-purple+1)
-       (300. . ,monokai-cyan)
-       (320. . ,monokai-cyan+1)
-       (340. . ,monokai-magenta)
-       (360. . ,monokai-magenta+1)))
-   `(vc-annotate-very-old-color ,monokai-magenta)
-   `(vc-annotate-background ,monokai-bg)
-   ))
+  `(vc-annotate-color-map
+    '(( 20. . ,monokai-fg-1)
+      ( 40. . ,monokai-bg+2)
+      ( 60. . ,monokai-red)
+      ( 80. . ,monokai-red+1)
+      (100. . ,monokai-orange)
+      (120. . ,monokai-orange+1)
+      (140. . ,monokai-green)
+      (160. . ,monokai-green+1)
+      (180. . ,monokai-yellow)
+      (200. . ,monokai-yellow+1)
+      (220. . ,monokai-blue)
+      (240. . ,monokai-blue+1)
+      (260. . ,monokai-purple)
+      (280. . ,monokai-purple+1)
+      (300. . ,monokai-cyan)
+      (320. . ,monokai-cyan+1)
+      (340. . ,monokai-magenta)
+      (360. . ,monokai-magenta+1)))
+  `(vc-annotate-very-old-color ,monokai-magenta)
+  `(vc-annotate-background ,monokai-bg)
+))
 
 ;;; Rainbow Support
-
 (declare-function rainbow-mode 'rainbow-mode)
 (declare-function rainbow-colorize-by-assoc 'rainbow-mode)
 
