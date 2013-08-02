@@ -3,7 +3,7 @@
 ;; Copyright (C) 2011-2013
 
 ;; Author: Kelvin Smith <oneKelvinSmith@gmail.com>
-;; URL: http://github.com/oneKelvinSmith/monokai
+;; URL: http://github.com/oneKelvinSmith/monokai-emacs
 ;; Version: 1.2
 
 ;; This program is free software; you can redistribute it and/or modify
